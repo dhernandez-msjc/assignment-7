@@ -7,9 +7,11 @@
 #define LINKLIST_H
 
 #include <string>
+// TODO: this does not belong outside of main stated on various feedback.
 using namespace std;
 
 struct Node {
+    // TODO: void type is not valid, variables shoudl be lower case
     void * Data;
     Node *Next;
 };
@@ -17,6 +19,7 @@ struct Node {
 class LinkList {
 public:
     LinkList();
+    // TODO: void type is not valid
     void addItem(void * data);
     void listItems(void print(void *));
 private:
